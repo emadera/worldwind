@@ -1,0 +1,83 @@
+.worldwind {
+    .controls-container {
+        text-align: center;
+        margin-bottom: 20px;
+
+        .control-button {
+            padding: 10px;
+            border-radius: 4px;
+            width: 200px;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.walmart {
+                background-color: blue;
+            }
+            &.target {
+                background-color: red;
+            }
+            &.annotation {
+                background-color: gray;
+            }
+        }
+    }
+    .world-container {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        canvas {
+            background-color: black;
+        }
+    }
+
+    .annotation-editor {
+        margin-top: 10px;
+        .annotation-instructions {
+            text-align: center;
+            font-size: 16px;
+
+            .create-annotation {
+                text-decoration: underline;
+                color: blue;
+                cursor: pointer;
+            }
+        }
+        .editing-container { 
+            margin-bottom: 10px;
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            .coordinates {
+                margin-right: 10px;
+                .coordinate-field {
+                    margin-bottom: 5px;
+                    label {
+                        width: 80px;
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+                    input {
+                        width: 60px;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .textarea-container {
+                flex: 1;
+                textarea {
+                    width: 100%;
+                    height: 100%;
+                };
+            }
+        }
+    }
+}
